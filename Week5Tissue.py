@@ -15,7 +15,7 @@ class Tissue:
         has a cell location array initialized to tissue_size x tissue_size. Initialize dictionaries anabolic and catabolic cells to be empty.
         :param tissue_size: An integer value representing the dimensions of tissue
         :param num_c_cells: An integer value representing the number of catabolic cells
-        :param num_a_cells: An integer value representing the number of anabolic cells.
+        :param num_a_cells: An integer value representing the number of anabolic cells
         """
         self.tissue_size = tissue_size
         self.tissue = np.full((tissue_size, tissue_size), .5)

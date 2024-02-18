@@ -17,7 +17,7 @@ durotaxsis_tissue = T.Tissue(100,20,20)
 # Simulate durotaxis movement on tissue
 durotaxsis_tissue.Simulate_Tissue('durotaxis', 1000, 0, 1, 0.05, figure=2)
 
-# Find a way to see if random or durotaxis movement creates more consistent value
+# Find a way to see if random or durotaxis movement creates more consistent value b
 
 def get_moving_average(tissue):
     tissue = tissue.get_tissue()

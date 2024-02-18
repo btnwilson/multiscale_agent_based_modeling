@@ -38,7 +38,7 @@ class Cell:
         # Get current row and column location of cell
         row_position = self.Get_Row()
         column_position = self.Get_Column()
-        # change row location of cell. If cell moves 'off' tissue, new location wraps around.
+        # change row location of cell. If cell moves 'off' tissue, new location wraps around
         new_row = row_position + change_row
         if new_row == tissue_size:
             new_row = 0
