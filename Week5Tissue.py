@@ -63,7 +63,10 @@ class Tissue:
         plt.figure(figure, clear = True)
         tissue_plot = plt.imshow(self.tissue, cmap='gray', interpolation='nearest', vmin=vmin, vmax=vmax)
         cell_plot = plt.imshow(self.cell_location, cmap='winter', interpolation='nearest', vmin=vmin, vmax=vmax)
-        plt.colorbar(tissue_plot)
+        tbar = plt.colorbar(tissue_plot, boundaries=(-1,0,1), ticks = (-0.5,0.5))
+        tbar.ax.set_yticklabels(('Low Tissue Density', 'High Tissue Density'))
+        cbar = plt.colorbar(cell_plot, boundaries=(-1,0,1), ticks = (-0.5,0.5))                      
+        cbar.ax.set_yticklabels(('Catabolic', 'Anabolic'))
 
         if movement_type == 'random':
             plt.title("Random Movement")
