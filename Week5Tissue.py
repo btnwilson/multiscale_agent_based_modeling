@@ -60,7 +60,7 @@ class Tissue:
         self.initialize_catabolic_cells()
         self.initialize_anabolic_cells()
         # Create figure
-        plt.figure(figure)
+        plt.figure(figure, clear = True)
         tissue_plot = plt.imshow(self.tissue, cmap='gray', interpolation='nearest', vmin=vmin, vmax=vmax)
         cell_plot = plt.imshow(self.cell_location, cmap='winter', interpolation='nearest', vmin=vmin, vmax=vmax)
         plt.colorbar(tissue_plot)
