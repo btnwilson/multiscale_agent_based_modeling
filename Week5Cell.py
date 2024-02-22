@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Feb 12 15:32:09 2024
-Cell class creates a cell object, cell type can be anaabolic or catabolic.
-Cell location is represented by x,y coordinates on a grid (column and row location).
+Created on Tue Feb 20 22:48:17 2024
 
 @author: bentn
 """
